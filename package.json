@@ -1,0 +1,54 @@
+{
+    "name": "@madnesslabs/madnessenjineer",
+    "private": true,
+    "version": "0.0.1",
+    "description": "A component maker in the browser",
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "stencil build",
+        "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+        "devWithSW": "sd concurrent \"stencil build --dev --service-worker --watch\" \"stencil-dev-server\" ",
+        "serve": "stencil-dev-server",
+        "start": "npm run dev",
+        "test": "jest --no-cache",
+        "test.watch": "jest --watch --no-cache"
+    },
+    "dependencies": {
+        "@ionic/core": "4.0.0-alpha.4",
+        "@stencil/core": "0.8.0",
+        "grapesjs": "^0.14.15",
+        "grapesjs-preset-newsletter": "^0.2.15"
+    },
+    "devDependencies": {
+        "@stencil/dev-server": "latest",
+        "@stencil/sass": "0.0.3",
+        "@stencil/utils": "latest",
+        "@types/jest": "^22.2.2",
+        "jest": "^22.4.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/madnesslabs/madnessenjineer.git"
+    },
+    "author": "Madness Labs",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/madnesslabs/madnessenjineer/issues"
+    },
+    "homepage": "https://madnessenjineer.net",
+    "jest": {
+        "transform": {
+            "^.+\\.(js|ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "json",
+            "jsx"
+        ]
+    }
+}
