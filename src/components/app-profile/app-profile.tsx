@@ -20,11 +20,7 @@ export class AppProfile {
   publicServerKey = urlB64ToUint8Array('BBsb4au59pTKF4IKi-aJkEAGPXxtzs-lbtL58QxolsT2T-3dVQIXTUCCE1TSY8hyUvXLhJFEUmH7b5SJfSTcT-E');
 
   componentWillLoad() {
-    if ('serviceWorker' in navigator && 'PushManager' in window) {
-      this.swSupport = true;
-    } else {
-      this.swSupport = false;
-    }
+    this.swSupport = 'serviceWorker' in navigator && 'PushManager' in window ? true : false;
   }
 
   @Listen('ionChange')
@@ -58,19 +54,19 @@ export class AppProfile {
                 // lets reflect this in our UI
                 console.log('web push subscription: ', sub);
                 this.notify = true;
-              })
+              });
           }
-        })
+        });
       }
-    })
+    });
   }
 
   render() {
     return [
       <ion-header>
-        <ion-toolbar color='primary'>
+        <ion-toolbar color="primary">
           <ion-buttons slot="start">
-            <ion-back-button defaultHref='/'></ion-back-button>
+            <ion-back-button defaultHref="/"></ion-back-button>
           </ion-buttons>
 
           <ion-title>Ionic PWA Toolkit</ion-title>

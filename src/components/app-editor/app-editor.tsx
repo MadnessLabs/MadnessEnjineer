@@ -22,28 +22,28 @@ export class AppEditor {
             name: 'Dimension',
             open: false,
             buildProps: ['width', 'height', 'max-width', 'min-height', 'margin', 'padding', 'display'],
-            properties:[{
+            properties: [{
               property: 'margin',
-              properties:[
+              properties: [
                 { name: 'Top', property: 'margin-top'},
                 { name: 'Left', property: 'margin-left'},
                 { name: 'Right', property: 'margin-right'},
                 { name: 'Bottom', property: 'margin-bottom'}
               ],
-            },{
+            }, {
               property  : 'padding',
-              properties:[
+              properties: [
                 { name: 'Top', property: 'padding-top'},
                 { name: 'Right', property: 'padding-right'},
                 { name: 'Bottom', property: 'padding-bottom'},
                 { name: 'Left', property: 'padding-left'}
               ],
             }],
-          },{
+          }, {
             name: 'Typography',
             open: false,
             buildProps: ['font-family', 'font-size', 'font-weight', 'letter-spacing', 'color', 'line-height', 'text-align', 'text-decoration', 'font-style', 'vertical-align', 'text-shadow'],
-            properties:[
+            properties: [
               { name: 'Font', property: 'font-family'},
               { name: 'Weight', property: 'font-weight'},
               { name: 'Font color', property: 'color'},
@@ -57,7 +57,7 @@ export class AppEditor {
                   { value: 'right', name: 'Right', className: 'fa fa-align-right'},
                   { value: 'justify', name: 'Justify', className: 'fa fa-align-justify'}
                 ],
-              },{
+              }, {
                 property: 'text-decoration',
                 type: 'radio',
                 defaults: 'none',
@@ -66,7 +66,7 @@ export class AppEditor {
                   { value: 'underline', name: 'underline', className: 'fa fa-underline' },
                   { value: 'line-through', name: 'Line-through', className: 'fa fa-strikethrough'}
                 ],
-              },{
+              }, {
                 property: 'font-style',
                 type: 'radio',
                 defaults: 'normal',
@@ -74,7 +74,7 @@ export class AppEditor {
                   { value: 'normal', name: 'Normal', className: 'fa fa-font'},
                   { value: 'italic', name: 'Italic', className: 'fa fa-italic'}
                 ],
-              },{
+              }, {
                 property: 'vertical-align',
                 type: 'select',
                 defaults: 'baseline',
@@ -84,7 +84,7 @@ export class AppEditor {
                   { value: 'middle'},
                   { value: 'bottom'}
                 ],
-              },{
+              }, {
                 property: 'text-shadow',
                 properties: [
                   { name: 'X position', property: 'text-shadow-h'},
@@ -93,14 +93,14 @@ export class AppEditor {
                   { name: 'Color', property: 'text-shadow-color'}
                 ],
             }],
-          },{
+          }, {
             name: 'Decorations',
             open: false,
             buildProps: ['background-color', 'border-collapse', 'border-radius', 'border', 'background'],
             properties: [{
               property: 'background-color',
               name: 'Background',
-            },{
+            }, {
               property: 'border-radius',
               properties  : [
                 { name: 'Top', property: 'border-top-left-radius'},
@@ -108,7 +108,7 @@ export class AppEditor {
                 { name: 'Bottom', property: 'border-bottom-left-radius'},
                 { name: 'Left', property: 'border-bottom-right-radius'}
               ],
-            },{
+            }, {
               property: 'border-collapse',
               type: 'radio',
               defaults: 'separate',
@@ -135,7 +135,7 @@ export class AppEditor {
                 { name: 'Style', property: 'border-style'},
                 { name: 'Color', property: 'border-color'},
               ],
-            },{
+            }, {
               property: 'background',
               properties: [
                 { name: 'Image', property: 'background-image'},

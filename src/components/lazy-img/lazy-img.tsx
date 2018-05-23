@@ -66,7 +66,7 @@ export class LazyImg {
           this.handleImage();
           this.removeIntersectionObserver();
         }
-      })
+      });
       this.io.observe(this.image);
     } else {
       // fall back to just loading the image for Safari and IE

@@ -82,9 +82,9 @@ export class MadnessEnjineer {
     return (
       <ion-app>
         <ion-router useHash={false}>
-          <ion-route url='/' component='app-home' />
-          <ion-route url='/profile' component='app-profile' />
-          <ion-route url='/editor' component='app-editor' />
+          <ion-route url="/" component="app-home" />
+          <ion-route url="/profile" component="app-profile" />
+          <ion-route url="/editor" component="app-editor" />
         </ion-router>
         <ion-nav></ion-nav>
       </ion-app>

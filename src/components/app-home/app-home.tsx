@@ -7,12 +7,6 @@ import { Component } from '@stencil/core';
 })
 export class AppHome {
 
-  editor: any;
-
-  componentDidLoad() {
-    
-  }
-
   render() {
     return (
       <ion-content>
