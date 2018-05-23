@@ -21,6 +21,10 @@ exports.config = {
     {
       src: '../node_modules/grapesjs-preset-newsletter/dist/*.min.js',
       dest: 'assets/js'
+    },
+    {
+      src: '../node_modules/firebase/firebase-*.js',
+      dest: 'assets/js'
     }
   ],
   outputTargets: [

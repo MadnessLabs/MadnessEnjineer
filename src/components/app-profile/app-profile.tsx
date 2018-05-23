@@ -1,6 +1,6 @@
 import { Component, Listen, Prop, State } from '@stencil/core';
 
-import { urlB64ToUint8Array } from '../../helpers/utils';
+import { urlB64ToUint8Array } from '../../services/utils';
 
 
 @Component({

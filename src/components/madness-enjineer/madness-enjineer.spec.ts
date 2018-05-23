@@ -1,7 +1,7 @@
 import { TestWindow } from '@stencil/core/testing';
-import { MyApp } from './my-app';
+import { MadnessEnjineer } from './madness-enjineer';
 
-describe('my-app', () => {
+describe('madness-enjineer', () => {
 
   it('should update', async () => {
     await window.flush();
@@ -12,8 +12,8 @@ describe('my-app', () => {
   beforeEach(async () => {
     window = new TestWindow();
     element = await window.load({
-      components: [MyApp],
-      html: '<my-app></my-app>'
+      components: [MadnessEnjineer],
+      html: '<madness-enjineer></madness-enjineer>'
     });
   });
 });

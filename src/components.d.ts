@@ -23,12 +23,45 @@ declare global {
   interface HTMLAttributes {}
 }
 
-import 'ionicons';
 import '@ionic/core';
+import 'ionicons';
 
 import {
   EventEmitter,
 } from '@stencil/core';
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppEditor {
+
+    }
+  }
+
+  interface HTMLAppEditorElement extends StencilComponents.AppEditor, HTMLStencilElement {}
+
+  var HTMLAppEditorElement: {
+    prototype: HTMLAppEditorElement;
+    new (): HTMLAppEditorElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-editor': HTMLAppEditorElement;
+  }
+  interface ElementTagNameMap {
+    'app-editor': HTMLAppEditorElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-editor': JSXElements.AppEditorAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppEditorAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 
 declare global {
 
@@ -137,30 +170,30 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyApp {
+    interface MadnessEnjineer {
 
     }
   }
 
-  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+  interface HTMLMadnessEnjineerElement extends StencilComponents.MadnessEnjineer, HTMLStencilElement {}
 
-  var HTMLMyAppElement: {
-    prototype: HTMLMyAppElement;
-    new (): HTMLMyAppElement;
+  var HTMLMadnessEnjineerElement: {
+    prototype: HTMLMadnessEnjineerElement;
+    new (): HTMLMadnessEnjineerElement;
   };
   interface HTMLElementTagNameMap {
-    'my-app': HTMLMyAppElement;
+    'madness-enjineer': HTMLMadnessEnjineerElement;
   }
   interface ElementTagNameMap {
-    'my-app': HTMLMyAppElement;
+    'madness-enjineer': HTMLMadnessEnjineerElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-app': JSXElements.MyAppAttributes;
+      'madness-enjineer': JSXElements.MadnessEnjineerAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyAppAttributes extends HTMLAttributes {
+    export interface MadnessEnjineerAttributes extends HTMLAttributes {
 
     }
   }

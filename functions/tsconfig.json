@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["es6"],
+    "lib": [
+      "es6"
+    ],
     "module": "commonjs",
     "noImplicitReturns": true,
     "outDir": "lib",
@@ -9,6 +11,7 @@
   },
   "compileOnSave": true,
   "include": [
-    "src"
+    "src",
+    "../interfaces/global.d.ts"
   ]
 }
